@@ -1,5 +1,3 @@
-import eventHandlerHelpers as helpers
-
 client = None
 
 def init(c):
