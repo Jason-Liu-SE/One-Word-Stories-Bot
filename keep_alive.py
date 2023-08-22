@@ -15,7 +15,7 @@ def home():
 # for production
 def run():
   from waitress import serve
-  serve(app, host="0.0.0.0", port=3000)
+  serve(app, host="0.0.0.0", port=8080)
 
 def keep_alive():
   t = Thread(target=run)

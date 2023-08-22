@@ -3,7 +3,6 @@ from discord.ext import commands
 import os
 import eventHandler
 import pymongoManager
-from keep_alive import keep_alive
 
 def isAdmin(ctx):
   return ctx.author.guild_permissions.administrator
@@ -89,5 +88,4 @@ def runDiscordBot():
     await bot.process_commands(message)
 
   # execution
-  keep_alive()
   bot.run(os.environ['TOKEN'])
